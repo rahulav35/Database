@@ -7,7 +7,7 @@ import Sidebarnewapp from "./Sidebarnewapp";
 
 function Access() {
   return (
-    <div className="h-[90%] w-[90%] flex items-center justify-center absolute  border-2 border-blue-700">
+    <div className="h-[70%] w-[70%] flex items-center justify-center absolute  ">
       <div className="h-[100%] w-[100%] bg-[#494343d5]  flex flex-col items-start justify-start text-white text-xl font-semibold ">
         <h1 className="  text-white text-xl font-semibold ml-20 mt-10 ">
           Access
@@ -17,7 +17,6 @@ function Access() {
 
         <Next />
       </div>
-      <Sidebarnewapp />
     </div>
   );
 }

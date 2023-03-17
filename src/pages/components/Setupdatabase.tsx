@@ -6,7 +6,7 @@ import Sidebarnewapp from "./Sidebarnewapp";
 
 function Setupdatabase() {
   return (
-    <div className="h-[90%] w-[90%] flex items-center justify-center absolute ">
+    <div className="h-[70%] w-[70%] flex items-center justify-center absolute ">
       <Header />
 
       <div className="h-[100%] w-[100%] bg-[#494343d5]  flex flex-col items-start justify-start text-white text-xl font-semibold ">
@@ -17,7 +17,6 @@ function Setupdatabase() {
 
         <Next />
       </div>
-      <Sidebarnewapp />
     </div>
   );
 }
