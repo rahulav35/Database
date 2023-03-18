@@ -6,7 +6,7 @@ import Setupapp from "./Setupapp";
 import Setupdatabase from "./Setupdatabase";
 import Sidebarnewapp from "./Sidebarnewapp";
 
-function Bgcomponent() {
+function Bgcomponent({ onClick }: { onClick: () => void }) {
   const [task, setTask] = useState("");
 
   function HandleClick() {
@@ -19,7 +19,7 @@ function Bgcomponent() {
     } else if (task === "Setupdatabase") {
       return <Setupdatabase />;
     } else if (task === "Finishup") {
-      return <Finishup />;
+      return <Finishup onClick={onClick} />;
     } else {
       return <Setupapp />;
     }

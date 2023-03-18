@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BiAddToQueue } from "react-icons/bi";
-import Bgcomponent from "./Bgcomponent";
+
 type props = { onClick: () => void };
 
 function Addnewtask({ onClick }: props) {

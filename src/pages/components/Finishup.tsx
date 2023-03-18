@@ -1,7 +1,10 @@
 import React from "react";
 import { useRouter } from "next/router";
+type props = {
+  onClick: () => void;
+};
 
-function Finishup() {
+function Finishup({ onClick }: props) {
   const router = useRouter();
   return (
     <div className="h-[70%] w-[70%] flex items-center justify-center absolute ">
@@ -13,7 +16,7 @@ function Finishup() {
           App setup completed
         </h2>
         <button
-          onClick={() => router.push("/finaldashboard")}
+          onClick={onClick}
           className="h-[40px] w-[140px] flex justify-center items-center mt-8  bg-[#FF0000] text-sm text-white rounded-lg"
         >
           Close
